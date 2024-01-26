@@ -4,7 +4,7 @@ from threading import Lock
 
 import gradio as gr
 
-from src.app.query_data import get_basic_qa_chain
+from query_data import get_basic_qa_chain
 
 
 def set_openai_api_key(api_key: str):

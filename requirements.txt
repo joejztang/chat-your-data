@@ -1,7 +1,8 @@
-langchain
-openai
-faiss-cpu
-unstructured
-tiktoken
-rich #for console formatting
-gradio
+langchain==0.1.4
+langchain-community==0.0.15
+openai==1.10.0
+faiss-cpu==1.7.4
+unstructured==0.12.2
+tiktoken==0.5.2
+rich==13.7.0 #for console formatting
+gradio==4.16.0

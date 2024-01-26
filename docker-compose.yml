@@ -1,8 +1,12 @@
+version: '3.9'
 services:
-  chat-your-data:
+  chat-your-data: &chat-your-data
+    image: chat-your-data
     build: .
     environment:
       GRADIO_SERVER_PORT: 7860
     ports:
-      - "7000:7860"
+      - "7860:7860"
+  test:
+    <<: *chat-your-data
     command: tail -f /dev/null
