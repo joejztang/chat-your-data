@@ -1,0 +1,8 @@
+services:
+  chat-your-data:
+    build: .
+    environment:
+      GRADIO_SERVER_PORT: 7860
+    ports:
+      - "7000:7860"
+    command: tail -f /dev/null
